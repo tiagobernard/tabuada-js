@@ -1,0 +1,39 @@
+
+body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #d8d8d8 0%, #ccc 100%);
+}
+
+.estilo {
+    animation: poing 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    width:fit-content;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#errorZero, #errorVazio {
+    color: darkred;
+}
+
+#errorZero a, #errorVazio a {font-weight: 700;text-decoration: none;color: darkred;}
+
+@keyframes poing {
+    0% 
+    {
+        transform: scale(.3)
+    }
+    35% {
+        transform: scale(.7);
+    }
+    70% {
+        transform: scale(.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
